@@ -1,0 +1,11 @@
+{
+    "buildCommand": "cd client && npm install && npm run build",
+    "outputDirectory": "dist/public",
+    "routes": [
+      {
+        "src": "^/(?!assets/).*",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  

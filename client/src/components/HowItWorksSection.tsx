@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import onboardingImage from "@assets/generated_images/hero_collaboration_workspace_image.png";
+import onboardingImage from "@assets/generated_images/signup.jpg";
 import aiMatchingImage from "@assets/generated_images/ai_matchmaking_visualization.png";
 import dashboardImage from "@assets/generated_images/campaign_dashboard_mockup.png";
 

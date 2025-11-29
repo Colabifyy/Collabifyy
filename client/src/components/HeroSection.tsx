@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Users, Building2 } from "lucide-react";
 import { Link } from "wouter";
-import heroImage from "@assets/generated_images/hero_collaboration_workspace_image.png";
+import heroImage from "@assets/CreatorCampaign.jpg";
 
 export function HeroSection() {
   return (
