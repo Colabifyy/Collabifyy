@@ -56,7 +56,7 @@ export default function WaitlistPage() {
 
   const mutation = useMutation({
     mutationFn: async (data: typeof formData) => {
-      return await apiRequest("/api/waitlist", "POST", {
+      return await apiRequest("POST","/api/waitlist",{
         userType,
         name: data.name,
         email: data.email,
@@ -68,6 +68,9 @@ export default function WaitlistPage() {
       setSubmitted(true);
     },
     onError: (error: Error) => {
+      // 🚨 DEBUG ALERT ADDED HERE
+      alert("DEBUG ERROR: " + error.message);
+      
       if (isUnauthorizedError(error)) {
         toast({
           title: "Session Expired",
@@ -81,7 +84,7 @@ export default function WaitlistPage() {
       }
       toast({
         title: "Error",
-        description: "Failed to join waitlist. Please try again.",
+        description: error.message,
         variant: "destructive",
       });
     },

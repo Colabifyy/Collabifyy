@@ -32,9 +32,20 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
+    // 👇 ADD THIS PROXY SECTION
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+    // Keep your existing settings
     fs: {
       strict: true,
       deny: ["**/.*"],
     },
-  },
-});
+    // Ensure the frontend listens on all IPs if needed (optional)
+    host: "0.0.0.0",
+    port: 5173,
+  }  })

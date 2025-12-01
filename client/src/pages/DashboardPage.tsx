@@ -20,7 +20,7 @@ export default function DashboardPage() {
         variant: "destructive",
       });
       setTimeout(() => {
-        window.location.href = "/api/login";
+        setLocation("/auth");
       }, 500);
     }
   }, [isAuthenticated, isLoading, toast]);

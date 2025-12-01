@@ -23,8 +23,9 @@ export default function AuthPage() {
 
   const handleGoogleSignIn = () => {
     const params = userType ? `?type=${userType}` : "";
-    window.location.href = `/api/login${params}`;
+    window.location.href = `http://localhost:3000/api/login`;
   };
+  
 
   if (isLoading) {
     return (
