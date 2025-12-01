@@ -82,7 +82,7 @@ export function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Button variant="default" onClick={() => window.location.href = "http://localhost:3000/api/login"} data-testid="button-signin">
+              <Button variant="default" onClick={() => window.location.href = "https://collabifyy-gg0g.onrender.com/api/login"} data-testid="button-signin">
                 Sign In with Google
               </Button>
             )}

@@ -23,7 +23,7 @@ export default function AuthPage() {
 
   const handleGoogleSignIn = () => {
     const params = userType ? `?type=${userType}` : "";
-    window.location.href = `http://localhost:3000/api/login`;
+    window.location.href = `https://collabifyy-gg0g.onrender.com/api/login`;
   };
   
 
