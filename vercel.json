@@ -1,11 +1,14 @@
 {
-    "buildCommand": "cd client && npm install && npm run build",
-    "outputDirectory": "dist/public",
-    "routes": [
-      {
-        "src": "^/(?!assets/).*",
-        "dest": "/index.html"
-      }
-    ]
-  }
-  
+  "buildCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "dist/public",
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://collabifyy-gg0g.onrender.com/api/$1"
+    },
+    {
+      "src": "^/(?!assets/).*",
+      "dest": "/index.html"
+    }
+  ]
+}
