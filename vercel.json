@@ -3,10 +3,6 @@
     {
       "source": "/api/:match*",
       "destination": "https://collabifyy-gg0g.onrender.com/api/:match*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
