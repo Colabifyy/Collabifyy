@@ -126,5 +126,5 @@ Preferred communication style: Simple, everyday language.
 - **PostCSS & Autoprefixer:** CSS processing
 
 **Design Assets:**
-- Google Fonts: Inter (UI), Space Grotesk (display)
+- Google Fonts: Inter (UI), Space Grotesk (display).
 - Custom generated images stored in attached_assets/generated_images/
