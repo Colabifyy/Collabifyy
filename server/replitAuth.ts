@@ -30,7 +30,7 @@ export function getSession() {
     cookie: {
       httpOnly: true,
       secure: isProd,                 // ✅ HTTPS only in prod
-      sameSite: isProd ? "none" : "lax", // ✅ cross-site in prod
+      sameSite: "none",      // changed to none 
       maxAge: sessionTtl,
     },
   });
